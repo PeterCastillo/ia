@@ -1,0 +1,69 @@
+.assistent {
+  background-color: rgba(244, 244, 244, 0.848);
+  border-top: solid 1px rgba(169, 169, 169, 0.644);
+  border-bottom: solid 1px rgba(169, 169, 169, 0.644);
+  &.noable {
+    display: none;
+  }
+  .message {
+    max-width: 700px;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .user {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      // flex-direction: row-reverse;
+      span {
+        &:nth-child(1) {
+          background-color: rgb(15, 152, 113);
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          color: white;
+          font-weight: bold;
+          justify-content: center;
+        }
+        &:nth-child(2) {
+          font-weight: 500;
+        }
+      }
+    }
+    .response {
+      width: 100%;
+      white-space: pre-wrap;
+      font-family: unset;
+      // display: block;
+    }
+  }
+  .reg {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    padding-bottom: 1rem;
+    span {
+      background-color: white;
+      border: solid 1px rgb(175, 175, 175);
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: auto;
+      cursor: pointer;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      user-select: none;
+      &:hover {
+        transition: all 150ms ease-in-out;
+        background-color: rgb(236, 236, 236);
+      }
+    }
+  }
+}

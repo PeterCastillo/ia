@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 700px;
+  margin: auto;
+  padding: 1rem;
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    flex-basis: 5rem;
+    flex-shrink: 1;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 10px;
+      font-weight: 500;
+      svg {
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      padding: 1rem;
+      font-size: 14px;
+      background-color: rgba(153, 153, 173, 0.089);
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+}

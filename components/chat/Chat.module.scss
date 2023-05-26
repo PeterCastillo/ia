@@ -1,0 +1,156 @@
+.chat {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .reg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    bottom: 1rem;
+    &.noable {
+      display: none;
+    }
+    span {
+      user-select: none;
+      background-color: white;
+      border: solid 1px rgb(175, 175, 175);
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: auto;
+      cursor: pointer;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      &:hover {
+        transition: all 150ms ease-in-out;
+        background-color: rgb(236, 236, 236);
+      }
+    }
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-top: auto;
+    font-size: 14px;
+    padding-bottom: 4rem;
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: rgb(188, 188, 188);
+      }
+    }
+    &.loading {
+      button {
+        opacity: 0.5;
+        pointer-events: none;
+        background-color: red;
+      }
+    }
+    .reg {
+      height: 100vh;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      margin: auto;
+      justify-content: center;
+      bottom: 0;
+      padding-bottom: 1rem;
+      &.noalble {
+        display: none;
+      }
+      span {
+        background-color: white;
+        border: solid 1px rgb(175, 175, 175);
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: auto;
+        cursor: pointer;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        &:hover {
+          transition: all 150ms ease-in-out;
+          background-color: rgb(236, 236, 236);
+        }
+      }
+    }
+    .user {
+      .message {
+        max-width: 700px;
+        margin: auto;
+        padding: 1rem;
+        .options {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          margin-top: 0.5rem;
+          span {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            gap: 0.3rem;
+            svg {
+              padding: 1px;
+              font-size: 10px;
+              cursor: pointer;
+            }
+          }
+          .edit {
+            cursor: pointer;
+            color: rgba(207, 207, 207, 0.793);
+            padding: 5px;
+            width: 1.5rem;
+            height: 1.5rem;
+            &:hover {
+              background: rgba(207, 207, 207, 0.793);
+              color: rgba(65, 65, 65, 0.793);
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+    .assistent {
+      background-color: rgba(239, 239, 239, 0.75);
+      border-top: solid 1px rgba(169, 169, 169, 0.644);
+      border-bottom: solid 1px rgba(169, 169, 169, 0.644);
+      .message {
+        max-width: 700px;
+        margin: auto;
+        padding: 1rem;
+        .options {
+          display: flex;
+          width: 100%;
+          justify-content: flex-end;
+          gap: 0.3rem;
+          svg {
+            cursor: pointer;
+            color: rgba(207, 207, 207, 0.793);
+            padding: 5px;
+            width: 1.5rem;
+            height: 1.5rem;
+            &:hover {
+              background: rgba(207, 207, 207, 0.793);
+              color: rgba(65, 65, 65, 0.793);
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

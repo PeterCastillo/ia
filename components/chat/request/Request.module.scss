@@ -1,0 +1,110 @@
+.user {
+  .disable {
+    display: none;
+  }
+  .message {
+    max-width: 700px;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .user {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      // flex-direction: row-reverse;
+      span {
+        &:nth-child(1){
+          background-color: rgb(27, 28, 30);
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          color: white;
+          font-weight: bold;
+          justify-content: center;
+        }
+        &:nth-child(2){
+          font-weight: 500;
+        }
+      }
+    }
+    .options {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        gap: 0.3rem;
+        svg {
+          padding: 1px;
+          font-size: 10px;
+          cursor: pointer;
+        }
+      }
+      .edit {
+        margin-left: auto;
+        cursor: pointer;
+        color: rgba(207, 207, 207, 0.793);
+        padding: 5px;
+        width: 1.5rem;
+        height: 1.5rem;
+        &:hover {
+          background: rgba(207, 207, 207, 0.793);
+          color: rgba(65, 65, 65, 0.793);
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .editable {
+    max-width: 700px;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    textarea {
+      border: none;
+      resize: none;
+      width: 100%;
+      font-family: unset;
+      outline: none;
+      overflow: hidden;
+    }
+    .buttonEdit {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      button {
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        font-weight: 600;
+        border: solid 1px rgb(205, 205, 205);
+        background-color: rgb(9, 166, 121);
+        color: white;
+        &:hover {
+          transition: all 150ms ease-in-out;
+          background-color: rgb(15, 152, 113);
+        }
+      }
+      span {
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        font-weight: 600;
+        border: solid 1px rgb(205, 205, 205);
+        background-color: white;
+        &:hover {
+          transition: all 150ms ease-in-out;
+          background-color: rgb(236, 236, 236);
+        }
+      }
+    }
+  }
+}
